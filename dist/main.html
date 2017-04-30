@@ -26,60 +26,79 @@
 	<!-- - for item in args-->
 
 	<body>
-		<div class="header">
-			<div class="top-line">
+		<div class="head-container">
+			<!--header-->
+			<div class="header">
+				<div class="top-line">
+					<div class="main-cont">
+						<div class="top-line-wrap">
+							<div class="mobile-logo">
+								<img src="img/logo.png" alt="" />
+							</div>
+							<div class="top-line-info">
+								<div class="top-line-el">
+									<div class="top-line-el-title">Работа горячей линии:</div>
+									<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+								</div>
+								<div class="top-line-el">
+									<div class="top-line-el-title">Прием онлайн-заявок:</div>
+									<div class="top-line-el-info">Круглосуточно</div>
+								</div>
+							</div>
+							<div class="top-line-loc">
+								<div class="top-line-loc-el">
+									<div class="top-line-loc-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<div class="top-line-loc-text">Варшавская</div>
+								</div>
+								<div class="top-line-loc-el">
+									<div class="top-line-loc-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<div class="top-line-loc-text">Каширская</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
 				<div class="main-cont">
-					<div class="top-line-wrap">
-						<div class="top-line-info">
-							<div class="top-line-el">
-								<div class="top-line-el-title">Работа горячей линии:</div>
-								<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
-							</div>
-							<div class="top-line-el">
-								<div class="top-line-el-title">Прием онлайн-заявок:</div>
-								<div class="top-line-el-info">Круглосуточно</div>
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<a href="#info" rel="m_PageScroll2id" class="menu-el">Зачем это нужно</a>
+								<a href="#step" rel="m_PageScroll2id" class="menu-el">Как мы работаем</a>
+								<a href="#price" rel="m_PageScroll2id" class="menu-el">Наши цены</a>
+								<a href="#advance" rel="m_PageScroll2id" class="menu-el">Почему выбирают нас</a>
+								<a href="#sert" rel="m_PageScroll2id" class="menu-el">Наши лицензии</a>
+								<a href="#contact" rel="m_PageScroll2id" class="menu-el">Контакты</a>
 							</div>
 						</div>
-						<div class="top-line-loc">
-							<div class="top-line-loc-el">
-								<div class="top-line-loc-icon">
-									<svg class="icon">
-										<use xlink:href="#metro"></use>
-									</svg>
-								</div>
-								<div class="top-line-loc-text">Варшавская</div>
-							</div>
-							<div class="top-line-loc-el">
-								<div class="top-line-loc-icon">
-									<svg class="icon">
-										<use xlink:href="#metro"></use>
-									</svg>
-								</div>
-								<div class="top-line-loc-text">Каширская</div>
-							</div>
+						<div class="nav-phone">
+							<a href="tel:+7 (495) 514-84-13" class="nav-phone-el">
+								<svg class="icon">
+									<use xlink:href="#phone-call"></use>
+								</svg>+7 (495) 514-84-13</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!--nav-end-->
 		</div>
-		<div class="nav">
-			<div class="main-cont">
-				<div class="nav-wrap">
-					<div class="menu">
-						<a href="#" class="menu-el">Зачем это нужно</a>
-						<a href="#" class="menu-el">Как мы работаем</a>
-						<a href="#" class="menu-el">Наши цены</a>
-						<a href="#" class="menu-el">Почему выбирают нас</a>
-						<a href="#" class="menu-el">Наши лицензии</a>
-						<a href="#" class="menu-el">Контакты</a>
-					</div>
-					<div class="nav-phone">
-						<a href="#" class="nav-phone-el">+7 (495) 514-84-13</a>
-						<a href="#" class="nav-phone-el">+7 (926) 555-84-13</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--section main-->
 		<div class="section section-main">
 			<div class="section-main-filter"></div>
 			<div class="main-cont">
@@ -102,10 +121,10 @@
 						<div class="form-title-sub">До конца </div>
 						<div class="form-month">Мая </div>
 						<form action="#">
-							<input type="text" placeholder="Ваше имя" />
-							<input type="text" placeholder="Ваш телефон" />
-							<input type="text" placeholder="Ваша почта" />
-							<textarea name="" cols="30" rows="4" placeholder="Местоположение Вашего обьекта"></textarea>
+							<input type="text" placeholder="Ваше имя" name="name" />
+							<input type="text" placeholder="Ваш телефон" name="phone" />
+							<input type="text" placeholder="Ваша почта" name="mail" />
+							<textarea name="comment" cols="30" rows="4" placeholder="Местоположение Вашего обьекта"></textarea>
 							<input type="submit" value="Отправить заявку" class="btn" />
 						</form>
 						<div class="form-foter-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolorem ipsam amet ad dignissimos, consectetur</div>
@@ -113,7 +132,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="section section-info">
+		<!--section main-end-->
+		<!--section info-->
+		<div id="info" class="section section-info">
 			<div class="main-cont">
 				<div class="section-info__wrap">
 					<div class="section-info__content">
@@ -133,6 +154,8 @@
 				</div>
 			</div>
 		</div>
+		<!--section info-end-->
+		<!--section-info-->
 		<div class="section section-info-two">
 			<div class="main-cont">
 				<div class="section-info__wrap">
@@ -156,7 +179,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="section section-step">
+		<!--section-info-end-->
+		<!--section-step-->
+		<div id="step" class="section section-step">
 			<div class="section-filter"></div>
 			<div class="main-cont">
 				<div class="section-title">как мы работаем</div>
@@ -242,6 +267,7 @@
 						<div class="step-el">
 							<div class="step-line">
 								<div class="step-dot"></div>
+								<div class="step-triangle"></div>
 							</div>
 							<div class="step-content">
 								<div class="step-numb">08</div>
@@ -250,6 +276,224 @@
 						</div>
 					</div>
 				</div>
+				<div class="step-total">Получаем выписку из ЕГРН на сформированный под Вашим многоквартирным домом земельный участок.</div>
+			</div>
+		</div>
+		<!--section-step-end-->
+		<!--section-price-->
+		<div id="price" class="section section-price">
+			<div class="main-cont">
+				<div class="section-title">Цены на наши услуги</div>
+				<div class="price">
+					<div class="price-col price-col--blue">
+						<div class="price-icon">
+							<svg class="icon">
+								<use xlink:href="#doc"></use>
+							</svg>
+						</div>
+						<div class="price-name">тариф</div>
+						<div class="price-title">стандарт</div>
+						<div class="price-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, ducimus.</div>
+						<div class="price-title-sub">цена</div>
+						<div class="price-val price-val--grey">70</div>
+						<div class="price-valut">тыс. руб</div>
+						<a href="#contact" rel="m_PageScroll2id" class="price-get">заказать</a>
+					</div>
+					<div class="price-col price-col--main">
+						<div class="price-icon">
+							<svg class="icon">
+								<use xlink:href="#like"></use>
+							</svg>
+						</div>
+						<div class="price-name">тариф</div>
+						<div class="price-title">акция</div>
+						<div class="price-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, quo?</div>
+						<div class="price-title-sub">цена</div>
+						<div class="price-val">56</div>
+						<div class="price-valut">тыс. руб</div>
+						<a href="#contact" rel="m_PageScroll2id" class="price-get">заказать</a>
+					</div>
+					<div class="price-col price-col--blue">
+						<div class="price-icon">
+							<svg class="icon">
+								<use xlink:href="#case"></use>
+							</svg>
+						</div>
+						<div class="price-name">тариф</div>
+						<div class="price-title">расширенный</div>
+						<div class="price-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, praesentium?</div>
+						<div class="price-title-sub">цена</div>
+						<div class="price-val price-val--text">индивидуально</div>
+						<a href="#contact" rel="m_PageScroll2id" class="price-get">заказать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-price-end-->
+		<!--section-advance-->
+		<div id="advance" class="section section-advance">
+			<div class="main-cont">
+				<div class="section-title">Почему выбирают нас</div>
+				<div class="advance">
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#attest"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#time"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Оперативность решения вопросов.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#worker"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Все работы выполняются нашими штатными специалистами</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#money"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Окончательный расчет производится по факту выполнения работ.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#posred"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#result"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Более 1000 выполненных объектов по Москве и Московской области.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-advance-end-->
+		<!--section-cert-->
+		<div id="sert" class="section section-cert">
+			<div class="section-filter"></div>
+			<div class="main-cont">
+				<div class="section-title">Наши лицензии</div>
+				<div class="cert owl-carousel">
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+					<a href="img/sert-1.jpg" rel="group-elemen" class="fancybox cert-el">
+						<img src="img/sert-1.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--section-cert-end-->
+		<!--section-contact-->
+		<div id="contact" class="section section-contact">
+			<div class="main-cont">
+				<div class="section-title">Наши контакты</div>
+				<div class="contact">
+					<div class="contact-form">
+						<div class="main-form">
+							<div class="form-title">успейте оставить заявку</div>
+							<div class="form-title-sub">До конца </div>
+							<div class="form-month">Мая </div>
+							<form action="#">
+								<input type="text" placeholder="Ваше имя" name="name" />
+								<input type="text" placeholder="Ваш телефон" name="phone" />
+								<input type="text" placeholder="Ваша почта" name="mail" />
+								<textarea name="comment" cols="30" rows="4" placeholder="Местоположение Вашего обьекта"></textarea>
+								<input type="submit" value="Отправить заявку" class="btn" />
+							</form>
+							<div class="form-foter-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolorem ipsam amet ad dignissimos, consectetur</div>
+						</div>
+						<div class="contact-info">
+							<div class="map">
+								<script type="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A204f165acd91a0b5b67a5b3ee035c5e3f6773c8c3632881daff3e2779080ea1d&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script>
+							</div>
+							<div class="contact-row-wrap">
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#placeholder"></use>
+										</svg>
+									</div>
+									<div class="contact-text">г. Москва, Старокаширское шоссе, д.2, корп.2, 2 этаж, офис 206-1</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#phone-call"></use>
+										</svg>
+									</div>
+									<div class="contact-text">+7 (495) 514-84-13</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#mail"></use>
+										</svg>
+									</div>
+									<div class="contact-text">info@cgiku.ru</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-contact-end-->
+		<div class="modal modal-true">
+			<div class="modal-wrap">
+				<svg class="icon">
+					<use xlink:href="#interface"></use>
+				</svg>
+				<div class="modal-true-text">Ваша заявка принята</div>
 			</div>
 		</div>
 		<script src="js/combined.js"></script>
