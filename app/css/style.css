@@ -457,6 +457,11 @@ select input:-ms-input-placeholder {
   background: #267da0;
   border-bottom: 1px solid #3390b6;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
 .top-line {
   color: #fff;
 }
@@ -705,7 +710,12 @@ select input:-ms-input-placeholder {
 }
 @media only screen and (max-width: 1200px) {
   .section.section-main {
-    padding-top: 150px;
+    padding-top: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section.section-main {
+    padding-top: 100px;
   }
 }
 .section-main {
@@ -1147,6 +1157,11 @@ select input:-ms-input-placeholder {
   font-size: 32px;
   font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+  .step-numb {
+    width: 90px;
+  }
+}
 .step-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1162,6 +1177,16 @@ select input:-ms-input-placeholder {
           align-items: center;
   padding: 20px;
   font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .step-text {
+    width: -webkit-calc(100% - 90px);
+    width: calc(100% - 90px);
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .step-line {
   width: 10%;
@@ -1369,6 +1394,12 @@ select input:-ms-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .price-val--text {
+    height: auto;
+    padding: 20px 0;
+  }
+}
 .price-valut {
   text-transform: uppercase;
   color: #808080;
@@ -1466,6 +1497,18 @@ select input:-ms-input-placeholder {
   .advance-el {
     width: 100%;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .advance-icon {
@@ -1489,6 +1532,11 @@ select input:-ms-input-placeholder {
 @media only screen and (max-width: 968px) {
   .advance-icon {
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .advance-icon {
+    margin-right: 20px;
   }
 }
 .advance-icon .icon {

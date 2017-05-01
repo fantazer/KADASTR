@@ -1,6 +1,6 @@
 .header
 	+below(768px)
-		//display none
+		display none
 	padding 10px 0
 	background #267da0 
 	border-bottom 1px solid #3390b6
@@ -108,7 +108,9 @@
 //.section 
 .section.section-main 
 	+below(1200px)
-		padding-top 150px
+		padding-top 120px
+	+below(768px)
+		padding-top 100px
 	padding-top 100px
 	padding-bottom 0
 .section-main 
@@ -324,6 +326,8 @@
 	background white 
 	width 80%
 .step-numb 
+	+below(768px)
+		width 90px
 	color black
 	flex(mid)
 	border-right 1px solid blue
@@ -331,6 +335,9 @@
 	font-size 32px
 	font-weight bold 
 .step-text
+	+below(768px)
+		width calc(100% - 90px)
+		justify-content flex-start
 	flex(mid) 
 	padding 20px 
 	font-size 14px
@@ -433,6 +440,9 @@
 .price-val 
 	font-size 100px
 .price-val--text
+	+below(768px)
+			height auto	
+			padding 20px 0
 	font-size 36px
 	height 190px
 	flex(mid)
@@ -482,12 +492,15 @@
 	+below(768px)	
 		width 100%
 		margin-bottom 20px
+		flex(mid)
 	width 45%
 	flex(between)
 	margin-bottom 40px
 .advance-icon 
 	+below(968px)	
 		padding 20px
+	+below(768px)	
+		margin-right 20px
 	round()
 	flex(mid)
 	border 1px solid blue
