@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 
 	//validate form
 	$('.main-form form').each(function() {   

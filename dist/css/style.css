@@ -457,11 +457,6 @@ select input:-ms-input-placeholder {
   background: #267da0;
   border-bottom: 1px solid #3390b6;
 }
-@media only screen and (max-width: 768px) {
-  .header {
-    display: none;
-  }
-}
 .top-line {
   color: #fff;
 }
@@ -1001,6 +996,13 @@ select input:-ms-input-placeholder {
   .section-info__content {
     width: 100%;
   }
+}
+.section-info-two p {
+  color: #fff;
+}
+.section-info-two a {
+  text-decoration: underline;
+  color: #fff !important;
 }
 .section-info__title {
   text-transform: uppercase;
