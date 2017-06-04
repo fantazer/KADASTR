@@ -1,5 +1,13 @@
 $(document).ready(function(){
-	
+
+	//Set sale month
+
+	var monthNames = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+		"Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"
+	];
+	var d = new Date();
+	var saleDate = monthNames[d.getMonth()];
+	$('.form-month').html(saleDate);
 
 	//validate form
 	$('.main-form form').each(function() {   

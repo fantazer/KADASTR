@@ -710,7 +710,7 @@ select input:-ms-input-placeholder {
 }
 @media only screen and (max-width: 768px) {
   .section.section-main {
-    padding-top: 100px;
+    padding-top: 140px;
   }
 }
 .section-main {
@@ -804,9 +804,8 @@ select input:-ms-input-placeholder {
 }
 @media only screen and (max-width: 768px) {
   .main-percent {
-    font-size: 120px;
+    font-size: 60px;
     text-align: center;
-    line-height: 140px;
   }
 }
 .main-text {
@@ -1364,7 +1363,7 @@ select input:-ms-input-placeholder {
   font-weight: bold;
 }
 .price-text {
-  font-size: 14px;
+  font-size: 16px;
   color: #808080;
   text-align: center;
   margin-bottom: 40px;
@@ -1372,13 +1371,32 @@ select input:-ms-input-placeholder {
 @media only screen and (max-width: 768px) {
   .price-text {
     margin-bottom: 10px;
+    font-size: 14px;
   }
 }
 .price-title-sub {
   text-transform: uppercase;
 }
 .price-val {
-  font-size: 100px;
+  font-size: 72px;
+}
+@media only screen and (max-width: 1024px) {
+  .price-val {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .price-val {
+    font-size: 32px;
+  }
+}
+.price-icon-twice {
+  font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .price-icon-twice {
+    font-size: 38px;
+  }
 }
 .price-val--text {
   font-size: 36px;
