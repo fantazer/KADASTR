@@ -74,6 +74,11 @@ include ../module/**/*.jade
 					input(type="text" placeholder="Ваш телефон" name="phone")
 					input(type="text" placeholder="Ваша почта" name="mail")
 					textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+					.person-data
+						.person-data-check
+							input(type="checkbox" name="persondata")
+						.person-data-text Согласен с
+							a(href="agreement.pdf") условиями обработки персональных данных
 					input(type="submit" value="Отправить заявку").btn
 				.form-foter-text  Оставьте заявку и мы ответим вам в самое короткое время. Ждем Вас!
 //section main-end
@@ -251,7 +256,7 @@ include ../module/**/*.jade
 	.main-cont
 		.section-title Наши лицензии
 		.cert.owl-carousel
-			- for (var i = 0; i < 5; i++)
+			- for (var i = 0; i < 6; i++)
 				a(href="img/cert-#{i + 1}.jpg" rel="group-elemen").fancybox.cert-el
 					img(src="img/cert-#{i + 1}.jpg", alt="")
 
@@ -272,6 +277,11 @@ include ../module/**/*.jade
 						input(type="text" placeholder="Ваш телефон" name="phone")
 						input(type="text" placeholder="Ваша почта" name="mail")
 						textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+						.person-data
+							.person-data-check
+								input(type="checkbox" name="persondata")
+							.person-data-text Согласен с
+								a(href="agreement.pdf") условиями обработки персональных данных
 						input(type="submit" value="Отправить заявку").btn
 					.form-foter-text  Оставьте заявку и мы ответим вам в самое короткое время. Ждем Вас!
 				.contact-info

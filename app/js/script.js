@@ -26,6 +26,9 @@ $(document).ready(function(){
 								required:true,
 								minlength:5,
 							},
+							persondata:{
+								required: true
+							}
 						},
 						messages:{
 							name:{
@@ -40,6 +43,9 @@ $(document).ready(function(){
 								required: 'Обязательное поле',
 								minlength:'Сообщение должно быть длиннее',
 							},
+							persondata:{
+								required: 'Обязательное поле'
+							}
 						},
 						submitHandler : function(form){ 
 							$.ajax({ //отправка ajax

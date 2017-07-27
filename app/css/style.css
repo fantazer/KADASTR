@@ -919,6 +919,9 @@ select input:-ms-input-placeholder {
           border-radius: 25px;
   margin-top: 40px;
 }
+.main-form textarea {
+  width: 100%;
+}
 .form-title {
   text-transform: uppercase;
   text-align: center;
@@ -1841,6 +1844,54 @@ textarea.error {
   width: 20px;
   height: 20px;
 }
+.person-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .person-data {
+    width: 100%;
+  }
+}
+.person-data label.error {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -40px;
+}
+.person-data-check {
+  width: 25px;
+}
+.person-data-check input {
+  margin-bottom: 0;
+}
+.person-data-check input:focus {
+  border: 0;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+.person-data-text {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+.person-data-text a {
+  color: #45b6e4;
+  text-decoration: underline;
+}
+label.error {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+  color: #ff4136;
+  font-weight: 700;
+}
 .col {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2732,6 +2783,9 @@ body {
   .main-cont {
     width: 1200px;
   }
+}
+box {
+  margin-bottom: 30px;
 }
 /* block footer*/
 /*block footer end */
